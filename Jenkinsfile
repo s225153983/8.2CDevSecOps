@@ -73,7 +73,7 @@ pipeline {
                             Write-Host "Reusing the SonarScanner CLI already present in the workspace."
                         }
 
-                        $scanner = Join-Path $folder "bin\sonar-scanner.bat"
+                        $scanner = Join-Path $folder "bin/sonar-scanner.bat"
                         Write-Host "Running $scanner"
                         & $scanner "-Dsonar.token=$env:SONAR_TOKEN"
 

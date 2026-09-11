@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         SONAR_SCANNER_VERSION = '7.3.0.5189'
-        SONAR_SCANNER_HOME    = "${WORKSPACE}\sonar-scanner-${SONAR_SCANNER_VERSION}-windows-x64"
     }
 
     triggers {
